@@ -40,7 +40,7 @@ npm install --save-dev svelte-preprocess-css-global
 ```javascript
 // rollup.config.js
 import svelte from 'rollup-plugin-svelte';
-import { globalCSS } from 'svelte-preprocess-css-global';
+import globalCSS from 'svelte-preprocess-css-global';
 ...
 
 export default {
@@ -49,7 +49,7 @@ export default {
     ...
     svelte({
       preprocess: {
-        style: globalCSS(),
+        css: globalCSS(),
       },
     }),
   ],
